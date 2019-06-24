@@ -9,11 +9,8 @@
     <engine name="cordova" version=">=6.4.0"/>
     <engine name="cordova-android" version=">=6.0.0"/>
   </engines>
-  <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="overwrite">
-      <application android:allowBackup="false"/>
-    </edit-config>
-  </platform>
+<preference name="android-manifest/application/@android:allowBackup" value="false" />
+
 	
 
 	
