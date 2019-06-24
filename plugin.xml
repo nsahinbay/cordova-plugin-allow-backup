@@ -9,9 +9,14 @@
     <engine name="cordova" version=">=6.4.0"/>
     <engine name="cordova-android" version=">=6.0.0"/>
   </engines>
-<preference name="android-manifest/application/@android:allowBackup" value="false" />
-
 	
+<platform name="android">
+
+        <!-- Add (rather than overwrite) a config-file block -->
+        <custom-config-file mode="add" parent="./" target="AndroidManifest.xml">
+            <application android:allowBackup="false"/>
+        </custom-config-file>
+    </platform>
 
 	
 	
